@@ -16,8 +16,8 @@ my $mpileupR2;
 my $genome;
 #get options :
 GetOptions ("bam=s" => \$BAM,    #Provide the bam file containing the mapped reads (mapping suggestion : BWA)
-	    "Q=s" => \$Q,
-	    "q=s" => \$q,
+	    "Q=s" => \$Q, #skip bases with baseQ/BAQ smaller than $Q 
+	    "q=s" => \$q, #skip alignments with mapQ smaller than $q
 	    "mpileup1=s" => \$mpileupR1, #output of the program : R1 mpileup
 	    "mpileup2=s" => \$mpileupR2, #output of the program : R2 mpileup 
 	    "genome=s" => \$genome #genome file (in fasta format)

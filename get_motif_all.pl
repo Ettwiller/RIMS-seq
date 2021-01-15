@@ -43,18 +43,27 @@ my $bed_background = $bed2."background.bed";
 
 my $out1 = $mpileup1; $out1 =~ s/\.mpileup//; $out1 =~ s/.*\///g; $out1 = $outdir."/".$out1.".fasta";
 my $out2 = $mpileup2; $out2 =~ s/\.mpileup//; $out2 =~ s/.*\///g; $out2 = $outdir."/".$out2.".fasta";
+
+
+
 #forground
 get_bed($mpileup1, $bed1);
 get_bed_reverse($mpileup2, $bed1_rev);
 my $concatenation1 = "cat $bed1 $bed1_rev > $bed_forground";
 system($concatenation1);
 get_seq($bed_forground, $out1, $genome, $flank);
+
+
+
 #background
 get_bed($mpileup2, $bed2);
 get_bed_reverse($mpileup1, $bed2_rev);
 my $concatenation2 = "cat $bed2 $bed2_rev > $bed_background";
 system($concatenation2);
 get_seq($bed_background, $out2, $genome, $flank);
+
+
+#run the motif discovery pipeline
 run_motif($out1, $out2,$significance);
 
 sub get_seq {
