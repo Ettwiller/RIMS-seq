@@ -11,7 +11,7 @@ my $fq2;
 my $genome;
 my $bam;
 
-#get options :
+#get all options :
 GetOptions (    "fq1=s" => \$fq1,    # the Read1 file 
 		"fq2=s" => \$fq2,# the read 2 file
 		"genome=s" => \$genome, #the genome_file
