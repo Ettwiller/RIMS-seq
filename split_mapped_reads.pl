@@ -3,6 +3,9 @@ use strict;
 use Getopt::Long qw(GetOptions);
 use File::Temp qw(tempfile);
 
+#this program require samtools.
+
+
 my $error_sentence = "USAGE : perl $0 --bam bam_file -genome genome_file.fasta -mpileup1 output_file1 -mpileup2 output_file2 -Q 10 (DEFAULT 0) -q 20 (DEFAULT 10)";
 
 # declare the options upfront :
@@ -13,12 +16,12 @@ my $mpileupR1;
 my $mpileupR2;
 my $genome;
 #get options :
-GetOptions ("bam=s" => \$BAM,    # the mpileup file from the first in pair read
+GetOptions ("bam=s" => \$BAM,    #Provide the bam file containing the mapped reads (mapping suggestion : BWA)
 	    "Q=s" => \$Q,
 	    "q=s" => \$q,
-	    "mpileup1=s" => \$mpileupR1,
-	    "mpileup2=s" => \$mpileupR2,
-	    "genome=s" => \$genome
+	    "mpileup1=s" => \$mpileupR1, #output of the program : R1 mpileup
+	    "mpileup2=s" => \$mpileupR2, #output of the program : R2 mpileup 
+	    "genome=s" => \$genome #genome file (in fasta format)
     ) or die $error_sentence;
 
 #=================================
