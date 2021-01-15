@@ -5,7 +5,6 @@ use File::Temp qw(tempfile);
 
 #this program require samtools.
 
-
 my $error_sentence = "USAGE : perl $0 --bam bam_file -genome genome_file.fasta -mpileup1 output_file1 -mpileup2 output_file2 -Q 10 (DEFAULT 0) -q 20 (DEFAULT 10)";
 
 # declare the options upfront :
@@ -35,18 +34,31 @@ my $bam_R2 = new File::Temp( UNLINK => 1 );
 
 #do not override a file ==========
 #if(-e $out) { die "File $out Exists, please remove old file or rename output file (--out)"};
-#================================= 
 
-#my $command_R1 = "samtools view -b -f 64 -b $BAM > $bam_R1";    
-#my $command_R2 = "samtools view -b -f 128 -b $BAM > $bam_R2";
-#changed from above (02/10/2020)
+#================================= 
+#split the bam files according to R1 and R2 using the flag number. 
+#66 = read mapped in proper pair + first in pair  
+#130 = read mapped in proper pair + second in pair
+#=================================
+
 my $command_R1 = "samtools view -b -f 66 -b $BAM > $bam_R1";                                                                     
 my $command_R2 = "samtools view -b -f 130 -b $BAM > $bam_R2";     
 
-    #run mpileup on the separated Bam files.
+
+#=================================  
+#run mpileup on the separated Bam files.
+# -q skip alignments with mapQ smaller than $q
+# -Q skip bases with baseQ/BAQ smaller than $Q
+# -O output base positions on reads
+# -s output mapping quality
+#=================================  
 
 my $command_mplipeup_R1 = "samtools mpileup -O -s -q $q -Q $Q -f $genome $bam_R1 > $mpileupR1";
 my $command_mplipeup_R2 = "samtools mpileup -O -s -q $q -Q $Q -f $genome $bam_R2 > $mpileupR2";
+
+#================================= 
+#execute
+#================================= 
 
 system($command_R1);
 system($command_R2);
