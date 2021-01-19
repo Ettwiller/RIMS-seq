@@ -36,8 +36,8 @@ my $genome= $assembly_file."/".$generic."_assembly.fasta";
 #my $c0 = "/home/ettwiller/exe/SPAdes-3.13.0-Linux/bin/spades.py -1 $fq1 -2 $fq2 -o  $assembly_file";
 
 my $c0 = "spades.py -1 $fq1 -2 $fq2 -o  $assembly_file"; 
-my $c01 = "mv $assembly_tmp $genome";
-my $c02 = "bwa index $genome";
+my $c01 = "mv $assembly_tmp $assembly_genome";
+my $c02 = "bwa index $assembly_genome";
 
 
 my $generic_genome = $genome;
