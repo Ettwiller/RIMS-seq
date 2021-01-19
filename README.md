@@ -4,7 +4,7 @@ RIMS-seq is a new method to simultaneously sequence bacterial genomes and determ
 
 ## RIMS-seq pipeline 
 #1. Data pre-processing
-Adapters need to be removed and the reads mappd to the reference genome. Mapping should be done using BWA-mem
+######Adapters need to be removed and the reads mappd to the reference genome. Mapping should be done using BWA-mem
 
 #2. split_mapped_reads.pl
 
