@@ -6,7 +6,7 @@ RIMS-seq is a new method to simultaneously sequence bacterial genomes and determ
 ## Requirements before starting
 Samtools (version xx)
 Bedtools (version xx)
-MoSDi(https://bitbucket.org/tobiasmarschall/mosdi/src/master/) are required to be installed on your system 
+and MoSDi (https://bitbucket.org/tobiasmarschall/mosdi/src/master/) are required to be installed on your system 
 
 ## 1. mapping.pl
 Adapters need to be removed and the reads mapped to the reference genome. If not using this script, the mapping should be done using BWA-mem
