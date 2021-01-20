@@ -35,7 +35,7 @@ If using your own script for mapping, make sure you are using BWA-mem.
 
 Usage:
 ```
-perl mapping.pl --fq1 fastq1 --fq2 fastq2 --genome fasta_file --out bam
+perl mapping.pl --fq1 fastq1 --fq2 fastq2 --genome fasta_file --out output_bam_name
 ```
 
 ## split_mapped_reads.pl
