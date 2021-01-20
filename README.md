@@ -14,8 +14,8 @@ The pipeline requires the follwing programs to be installed on your system:
 The RIMS-seq pipeline is composed of 3 mains scripts:
 - mapping.pl
 - split_mappes_reads.pl
-- get_motif_all.pl
-  According to your needs, 2 options can be used to run the analysis.  The option 1 performs the genome assembly while the option 2 allows you to use your own reference genome for the analysis (see below for more details).
+- get_motif_all.pl  
+According to your needs, 2 options can be used to run the analysis.  The option 1 performs the genome assembly while the option 2 allows you to use your own reference genome for the analysis (see below for more details).
 
 ## Option 1: automatic analysis using RIMS-seq.pl (easy)
 The RIMS-seq.pl script automatically runs the 3 previous scripts and outputs a list of mehylase specifities. It includes a genome assembly step using SPAdes and uses this assembled genome for the downstream analysis.
