@@ -30,7 +30,7 @@ Please see the next section 'scripts description' for more details.
 
 # Scripts description
 ## mapping.pl
-This script uses BWA-meme to map the reads to a reference genome. Adapters need to be removed prior using using this script.\
+This script uses BWA-mem to map the reads to a reference genome. Adapters need to be removed prior using this script.\
 If using your own script for mapping, make sure you are using BWA-mem.
 
 ## split_mapped_reads.pl
