@@ -20,11 +20,11 @@ According to your needs, 2 options can be used to run the analysis.\
 The option 1 performs the genome assembly while the option 2 allows you to use your own reference genome for the analysis (see below for more details).
 
 ## Option 1: automatic analysis using RIMS-seq.pl (easy)
-The RIMS-seq.pl script automatically runs the 3 previous scripts and outputs a list of mehylase specifities.\
+The `RIMS-seq.pl` script automatically runs the 3 previous scripts and outputs a list of mehylase specifities.\
 It includes a genome assembly step using SPAdes and uses this assembled genome for the downstream analysis.
 
 ## Option 2: use your own reference genome (custom)
-If you do not want to perform a genome assembly and want to use your own reference genome, you will need to run the 3 main scripts (mapping.pl, split_mapped_reads.pl, get_motif_all.pl) separately.\
+If you do not want to perform a genome assembly and want to use your own reference genome, you will need to run the 3 main scripts `mapping.pl`, `split_mapped_reads.pl`, `get_motif_all.pl` separately.\
 First, adapters need to be trimmed and the reads mapped to the reference genome using BWA-mem.\
 Please see the next section 'scripts description' for more details.
 
