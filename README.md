@@ -14,7 +14,7 @@ The pipeline requires the follwing programs to be installed on your system:
 The RIMS-seq pipeline is composed of 3 mains scripts:
 - mapping.pl
 - split_mappes_reads.pl
-- get_motif_all.pl\
+- get_motif_all.pl
 
 According to your needs, 2 options can be used to run the analysis.\
 The option 1 performs the genome assembly while the option 2 allows you to use your own reference genome for the analysis (see below for more details).
