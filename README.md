@@ -25,6 +25,7 @@ It includes a genome assembly step using SPAdes and uses this assembled genome f
 
 ## Option 2: use your own reference genome (custom)
 If you do not want to perform a genome assembly and want to use your own reference genome, you will need to run the 3 main scripts `mapping.pl`, `split_mapped_reads.pl`, `get_motif_all.pl` separately.\
+You can also run `split_mapped_reads.pl` on your own mapping.\
 First, adapters need to be trimmed and the reads mapped to the reference genome using BWA-mem.\
 Please see the next section 'scripts description and command-line usage' for more details.
 
