@@ -3,30 +3,29 @@ Here is a set of programs to analyze data derived from RIMS-seq (Rapid Identific
 RIMS-seq is a new method to simultaneously sequence bacterial genomes and determine m5C methylase specificities. It uses a simple experimental protocol that closely resembles the DNA-seq protocol for Illumina. For more details on RIMS-seq, please read our preprint (link).
 
 # Notes before starting
-The pipeline requires the following programs to be installed on your system:
-- BWA
-- Samtools
-- Bedtools
-- SPAdes
+The pipeline requires the following programs to be installed on your system: If you have a reference genome and perform you own mapping SPAdes and BWA are not necessary (see option 2).
+
+- SPAdes (https://github.com/ablab/spades) (Optional)
+- BWA (https://github.com/lh3/bwa) (Optional)
+- Samtools (http://www.htslib.org/download/)
+- Bedtools (https://bedtools.readthedocs.io/en/latest/content/installation.html)
 - MoSDi (https://bitbucket.org/tobiasmarschall/mosdi/src/master/)
 
 # RIMS-seq pipeline options
-The RIMS-seq pipeline is composed of 3 mains scripts:
-- mapping.pl
-- split_mappes_reads.pl
-- get_motif_all.pl
 
 According to your needs, 2 options can be used to run the analysis.\
 The option 1 performs the genome assembly while the option 2 allows you to use your own reference genome for the analysis (see below for more details).
 
 ## Option 1: automatic analysis using RIMS-seq.pl (easy)
-The `RIMS-seq.pl` script automatically runs the 3 previous scripts and outputs a list of mehylase specifities.\
+The `RIMS-seq.pl` script takes paired end reads and outputs a list of mehylase specifities.\
 It includes a genome assembly step using SPAdes and uses this assembled genome for the downstream analysis.
 
 ## Option 2: use your own reference genome (custom)
-If you do not want to perform a genome assembly and want to use your own reference genome, you will need to run the 3 main scripts `mapping.pl`, `split_mapped_reads.pl`, `get_motif_all.pl` separately.\
-You can also run `split_mapped_reads.pl` on your own mapping.\
-First, adapters need to be trimmed and the reads mapped to the reference genome using BWA-mem.\
+The RIMS-seq custom pipeline is composed of 3 mains scripts:
+- mapping.pl (optional)
+- split_mappes_reads.pl
+- get_motif_all.pl
+
 Please see the next section 'scripts description and command-line usage' for more details.
 
 # Scripts description and command-line usage
