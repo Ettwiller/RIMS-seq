@@ -22,9 +22,9 @@ It includes a genome assembly step using SPAdes and uses this assembled genome f
 
 ## Option 2: use your own reference genome (custom)
 The RIMS-seq custom pipeline is composed of 3 mains scripts:
-- mapping.pl (optional)
-- split_mappes_reads.pl
-- get_motif_all.pl
+- `mapping.pl` (optional)
+- `split_mappes_reads.pl`
+- `get_motif_all.pl`
 
 Please see the next section 'scripts description and command-line usage' for more details.
 
