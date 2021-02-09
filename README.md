@@ -49,13 +49,11 @@ perl split_mapped_reads.pl --bam bam_file -genome genome_file.fasta -mpileup1 ou
 ## get_motif_all.pl
 This script takes the two mpileup files previsouly generated and identifies the methylase specificity using a program called MosDi. 
 
-Usage:
+Usage example:
 ```
-perl get_motif_all.pl --mpileup1 mileup1 --mpileup2 mileup2 --qualityscore 35 (DEFAULT 30) --outdir directory --genome genome_file.fasta
+perl get_motif_all.pl --mpileup1 mileup1 --mpileup2 mileup2 --qualityscore 35 (DEFAULT 30) --outdir directory --genome genome_file.fasta --flank 8 (DEFAULT 7) --significance 1e-50
 ```
-Options:
-
-`--qualityscore` : base calling quality score. It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. Including lower quality base quality scores will increases the background noise.
+Required arguments:
 
 `--mpileup1`: mpileup generated using the `split_mapped_reads.pl` program using R1 reads.
 
@@ -64,6 +62,14 @@ Options:
 `--genome` : Genome (in fasta format) used for the mapping. 
 
 `--outdir` : output directory. 
+
+Optional arguments : 
+
+`--qualityscore` : Minimum base calling quality score (default =30). It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. Including lower quality base quality scores will increases the background noise.
+
+`--flank` : The regions around the C to T variants (default 7bp) <---7bp---C---7bp--->. 
+
+`--significance` : Motif significance (default = 1e-50). 
 
 
 ## RIMS-seq.pl
