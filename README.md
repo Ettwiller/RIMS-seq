@@ -75,7 +75,7 @@ Required arguments:
 
 Optional arguments : 
 
-`--qualityscore` : Minimum base calling quality score (default =30). It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. Including lower quality base quality scores will increases the background noise.
+`--qualityscore` : Minimum base calling quality score (default =30). It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. Including lower quality base quality scores will increases the background noise :thinking:.
 
 `--flank` : The regions around the C to T variants (default 7bp) <---7bp---C---7bp--->. 
 
