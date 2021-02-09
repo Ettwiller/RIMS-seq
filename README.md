@@ -53,8 +53,17 @@ Usage:
 ```
 perl get_motif_all.pl --mpileup1 mileup1 --mpileup2 mileup2 --qualityscore 35 (DEFAULT 30) --outdir directory --genome genome_file.fasta
 ```
-Option :
-```--qualityscore``` : base calling quality score. It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. 
+Options:
+
+`--qualityscore` : base calling quality score. It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. Including lower quality base quality scores will increases the background noise.
+
+`--mpileup1`: mpileup generated using the `split_mapped_reads.pl` program using R1 reads.
+
+`--mpileup2`: mpileup generated using the `split_mapped_reads.pl` program using R2 reads. 
+
+`--genome` : Genome (in fasta format) used for the mapping. 
+
+`--outdir` : output directory. 
 
 
 ## RIMS-seq.pl
