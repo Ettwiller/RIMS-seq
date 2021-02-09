@@ -31,7 +31,7 @@ Please see the next section 'scripts description and command-line usage' for mor
 # Scripts description and command-line usage
 ## mapping.pl
 This script uses BWA-mem to map the reads to a reference genome. Adapters need to be removed prior using this script.\
-If using your own script for mapping, make sure you are using BWA-mem.
+You can use your own script for mapping. We have optimized the next analytical steps based on the BWA-mem mapping alorithm - we therefore recommend to use BWA-mem.
 
 Usage:
 ```
@@ -53,6 +53,9 @@ Usage:
 ```
 perl get_motif_all.pl --mpileup1 mileup1 --mpileup2 mileup2 --qualityscore 35 (DEFAULT 30) --outdir directory --genome genome_file.fasta
 ```
+Option :
+```--qualityscore``` : base calling quality score. It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. 
+
 
 ## RIMS-seq.pl
 This script performs a genome assembly and uses the assembled genome to perform the analysis. It automatically runs the 3 previous scripts (see option 1).
