@@ -5,7 +5,7 @@ Note that the sequencing library should be done using a protocol based on adapto
 
 # Notes before starting
 The pipeline requires the following programs to be installed on your system:\
-Note: if you have a reference genome and perform you own mapping SPAdes and BWA are not necessary (see option 2).
+Note: if you have a reference genome and perform you own mapping, SPAdes and BWA are not necessary (see option 2).
 
 - SPAdes (https://github.com/ablab/spades) (Optional)
 - BWA (https://github.com/lh3/bwa) (Optional)
