@@ -3,7 +3,7 @@ RIMS-seq (*Rapid Identification of Methylase Specificity*) simultaneously sequen
 Note that the sequencing library should be done using a protocol based on adaptor ligation.\
 (:exclamation: RIMS-seq does not work if the library preparation protocol is based on tagmentation or other technologies :exclamation:)
 
-Here is a set of programs to analyze data derived from RIMS-seq (Rapid Identification of Methylase Specificity).\
+Here is a set of programs to analyze data derived from RIMS-seq (Rapid Identification of Methylase Specificity)
 
 # Notes before starting
 The pipeline requires the following programs to be installed on your system:\ 
