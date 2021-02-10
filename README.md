@@ -78,7 +78,7 @@ This script takes the two mpileup files previsouly generated and identifies the 
 
 Usage example:
 ```
-perl get_motif_all.pl --mpileup1 mileup1 --mpileup2 mileup2 --qualityscore 35 (DEFAULT 30) --outdir directory --genome genome_file.fasta --flank 8 (DEFAULT 7) --significance 1e-50
+perl get_motif_all.pl --mpileup1 mpileup1 --mpileup2 mpileup2 --qualityscore 35 (DEFAULT 30) --outdir directory --genome genome_file.fasta --flank 8 (DEFAULT 7) --significance 1e-50
 ```
 Required arguments:
 
