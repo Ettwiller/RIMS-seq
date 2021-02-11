@@ -16,7 +16,8 @@ Note: if you have a reference genome and perform you own mapping, SPAdes and BWA
 # RIMS-seq pipeline options
 
 According to your needs, 2 options can be used to run the analysis.\
-The option 1 performs the genome assembly while the option 2 allows you to use your own reference genome for the analysis (see below for more details).
+The option 1 performs the genome assembly while the option 2 allows you to use your own reference genome for the analysis (see below for more details).\
+:exclamation:In case of option2, your reference genome needs to be **exactly** the same as the bacteria sequenced using RIMS-seq. If the exact reference genome is not available, we recommend to use option1, where the genome is derived from the assembly done using RIMS-seq reads.
 
 ## Option 1: automatic analysis using RIMS-seq.pl (easy)
 The `RIMS-seq.pl` script takes paired end reads and outputs a list of mehylase specifities.\
@@ -92,7 +93,7 @@ Required arguments:
 
 Optional arguments : 
 
-`--qualityscore` : minimum base calling quality score (default=30). It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. Including lower quality base quality scores will increases the background noise :thinking:
+`--qualityscore` : minimum base calling quality score (default=30). It is recommendended that you use a base quality score between 30-35 for Illumina sequencing. Including lower quality base quality scores will increase the background noise :thinking:
 
 `--flank` : the regions around the C to T read variants (default 7bp) <---7bp---C---7bp---> 
 
