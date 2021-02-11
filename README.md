@@ -45,7 +45,7 @@ Required arguments:
 
 `--fq2` : fastq containing Read2
 
-`--genome` : genome of reference (in fasta format) used for mapping
+`--genome` : genome of reference (in fasta format). The reference genome needs to be exactly the same as used in RIMS-seq. We recommend that the genome is derived from the assembly done using RIMS-seq reads to avoid possible issue.
 
 `--out` : name for the output (.bam format)
 
