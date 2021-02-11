@@ -16,14 +16,14 @@ Note: if you have a reference genome and perform you own mapping, SPAdes and BWA
 # RIMS-seq pipeline options
 
 According to your needs, 2 options can be used to run the analysis.\
-The option 1 performs the genome assembly while the option 2 allows you to use your own reference genome for the analysis (see below for more details).\
+The option1 performs the genome assembly while the option2 allows you to use your own reference genome for the analysis (see below for more details).\
 :exclamation:In case of option2, your reference genome needs to be **exactly** the same as the bacteria sequenced using RIMS-seq. If the exact reference genome is not available, we recommend to use option1, where the genome is derived from the assembly done using RIMS-seq reads.
 
-## Option 1: automatic analysis using RIMS-seq.pl (easy)
+## Option1: automatic analysis using RIMS-seq.pl (easy)
 The `RIMS-seq.pl` script takes paired end reads and outputs a list of mehylase specifities.\
 It includes a genome assembly step using SPAdes and uses this assembled genome for the downstream analysis.
 
-## Option 2: use your own reference genome (custom)
+## Option2: use your own reference genome (custom)
 The RIMS-seq custom pipeline is composed of 3 mains scripts:
 - `mapping.pl` (optional)
 - `split_mapped_reads.pl`
