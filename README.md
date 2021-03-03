@@ -25,7 +25,7 @@ It includes a genome assembly step using SPAdes and uses this assembled genome f
 
 ## Option2: use your own reference genome (custom)
 The RIMS-seq custom pipeline is composed of 3 mains scripts:
-- `mapping.pl` (optional)
+- `mapping.pl` 
 - `split_mapped_reads.pl`
 - `get_motif_all.pl`
 
@@ -34,7 +34,7 @@ Please see the next section 'scripts description and command-line usage' for mor
 # Scripts description and command-line usage
 ## mapping.pl
 This script uses BWA-mem to map the reads to a reference genome. Adapters need to be removed prior using this script.\
-You can use your own script for mapping. We have optimized the next analytical steps based on the BWA-mem mapping alorithm - we therefore recommend to use BWA-mem.
+Alternatively, you can use your own script for mapping. We have optimized the next analytical steps based on the BWA-mem mapping alorithm - we therefore recommend to use BWA-mem. Reads needs to be mapped in paired-end mode. RIMS-seq requires that the sequencing is done in paired-end mode.  
 
 Usage:
 ```
