@@ -116,6 +116,8 @@ Required arguments:
 
 
 ## How to cite RIMS-seq
+RIMS-seq manuscript has been deposited in BioRxiv : 
+https://www.biorxiv.org/content/10.1101/2021.03.08.434449v1
 
 
 
