@@ -117,7 +117,7 @@ Required arguments:
 
 
 ## Test the RIMS-seq pipeline
-E. coli K12 MG1655 raw fastq.gz data have been added to the ```data``` folder. These data correspond to a RIMS-seq experiment using a 3h incubation. You can use these paired-end files to test the analysis pipeline. The methylated motif found by the pipeline should be C**C**WGG.
+Raw fastq.gz data have been added to the ```data``` folder. These data correspond to a RIMS-seq experiment on E. coli K12 MG1655 using a 3h incubation. You can use these paired-end files to test the analysis pipeline. The methylated motif found by the pipeline should be C**C**WGG.
 ```
 ecoli_rims_3h_5M.1.fastq.gz
 ecoli_rims_3h_5M.2.fastq.gz
