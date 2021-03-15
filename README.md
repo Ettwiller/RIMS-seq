@@ -115,6 +115,14 @@ Required arguments:
 `--fq2`: fastq containing Read2
 
 
+
+## Test the RIMS-seq pipeline
+E. coli K12 raw fastq.gz data have been added to the data folder. These data correspond to a 3h incubation RIMS-seq experiment. You can use tthese data to test the analysis pipeline. The methylated motif found by the pipeline should be C**C**WGG.
+```
+ecoli_rims_3h_5M.1.fastq.gz
+ecoli_rims_3h_5M.2.fastq.gz
+```
+
 ## How to cite RIMS-seq
 RIMS-seq manuscript has been deposited in BioRxiv : 
 https://www.biorxiv.org/content/10.1101/2021.03.08.434449v1
