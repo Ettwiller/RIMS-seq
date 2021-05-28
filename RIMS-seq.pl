@@ -69,9 +69,9 @@ my $c1 = "perl $mapping_program --fq1 $fq1 --fq2 $fq2 --genome $genome --out $ba
 my $c2 = "perl $mpileup_program -bam $bam -genome $genome -mpileup1 $mpileup1 -mpileup2 $mpileup2";
 my $c3 = "perl $motif_program --mpileup1 $mpileup1 --mpileup2 $mpileup2 --qualityscore $phred --outdir $motif_dir --genome $genome --flank 7\n";
 
-#system($c0);
-#system($c01);
-#system($c02);
+system($c0);
+system($c01);
+system($c02);
 system($c1);
 system($c2);
 system($c3);
