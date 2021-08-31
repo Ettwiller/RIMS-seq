@@ -124,8 +124,8 @@ ecoli_rims_3h_5M.2.fastq.gz
 ```
 
 ## How to cite RIMS-seq
-RIMS-seq manuscript has been deposited in BioRxiv : 
-https://www.biorxiv.org/content/10.1101/2021.03.08.434449v1
+RIMS-seq is now published in NAR :
+https://doi.org/10.1093/nar/gkab705
 
 
 
