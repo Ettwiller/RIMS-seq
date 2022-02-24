@@ -34,7 +34,8 @@ Please see the next section 'scripts description and command-line usage' for mor
 # Scripts description and command-line usage
 ## mapping.pl
 This script uses BWA-mem to map the reads to a reference genome. Adapters need to be removed prior using this script.\
-Alternatively, you can use your own script for mapping. We have optimized the next analytical steps based on the BWA-mem mapping alorithm - we therefore recommend to use BWA-mem. Reads needs to be mapped in paired-end mode. RIMS-seq requires that the sequencing is done in paired-end mode.  
+Alternatively, you can use your own script for mapping. We have optimized the next analytical steps based on the BWA-mem mapping alorithm - we therefore recommend to use BWA-mem. Reads needs to be mapped in paired-end mode. RIMS-seq requires that the sequencing is done in paired-end mode.\
+One to five million reads are enough to identify most of the methylase specificity and it is highly recommended to downsample the number of paired-end read to 1-5 millions to avoid lengthly processing time during the motif discovery step.
 
 Usage:
 ```
