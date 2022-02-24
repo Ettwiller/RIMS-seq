@@ -47,7 +47,7 @@ Required arguments:
 
 `--fq2` : fastq containing Read2
 
-`--genome` : genome of reference (in fasta format). :exclamation: The reference genome needs to be exactly the same as used in RIMS-seq. We recommend that the genome is derived from the assembly done using RIMS-seq reads to avoid possible issue.
+`--genome` : genome of reference (in fasta format). :exclamation: The reference genome needs to be exactly the same as used in RIMS-seq. We recommend that the genome is derived from the assembly done using RIMS-seq reads to avoid possible issue. We used SPAdes (https://cab.spbu.ru/software/spades/) for most of the assemblies using RIMS-seq but other assemblers can be used. 
 
 `--out` : name for the output (.bam format)
 
