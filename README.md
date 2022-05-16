@@ -1,5 +1,5 @@
 # About RIMS-seq
-RIMS-seq (*Rapid Identification of Methylase Specificity*) simultaneously sequences bacterial genomes and determines m5C methylase specificities using a simple experimental protocol that closely resembles the DNA-seq protocol for Illumina. For more details on RIMS-seq, please read our preprint https://www.biorxiv.org/content/10.1101/2021.03.08.434449v1. \
+RIMS-seq (*Rapid Identification of Methylase Specificity*) simultaneously sequences bacterial genomes and determines m5C methylase specificities using a simple experimental protocol that closely resembles the DNA-seq protocol for Illumina. For more details on RIMS-seq, please read our publication in NAR https://doi.org/10.1093/nar/gkab705. \
 Note that the sequencing library should be done using a protocol based on adapter ligation.\
 (:exclamation:RIMS-seq does not work if the library preparation protocol is based on tagmentation or other technologies:exclamation:)
 
